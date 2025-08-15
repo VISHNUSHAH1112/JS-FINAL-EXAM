@@ -1,6 +1,5 @@
 fetch("https://api.rootnet.in/covid19-in/stats/latest")
   .then( response => response.json())
-  
   .then( data => {
     const statesData = data.data.regional;
     const table = document.querySelector("#table");
@@ -28,3 +27,4 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest")
     console.error("Error fetching data:", error);
   });
   
+
